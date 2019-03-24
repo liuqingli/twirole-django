@@ -33,15 +33,15 @@ class SearchForm extends React.Component {
         // Disable the input and button if the form is loading
         let input, button;
         if (this.props.loading) {
-            input = <input disabled onChange={this.handleChange} type="text" className="form-control" placeholder="Twitter Handle" />;
+            input = <input disabled onChange={this.handleChange} type="text" className="form-control" placeholder="User's Screen_name" />;
             button = <button disabled className="btn btn-secondary">Classifying...</button>;
         } else {
-            input = <input onChange={this.handleChange} type="text" className="form-control" placeholder="Twitter Handle" />;
+            input = <input onChange={this.handleChange} type="text" className="form-control" placeholder="User's Screen_name"  />;
             button = <button className="btn btn-primary">Classify user</button>;
         }
 
         return (
-            <form id="classifyForm" onSubmit={this.handleSubmit}>
+            <form id="classifyForm" class="form-inline justify-content-center" onSubmit={this.handleSubmit}>
                 <div className="input-group input-group-btn mb-3">
                     <div className="input-group-prepend">
                         <span className="input-group-text">@</span>

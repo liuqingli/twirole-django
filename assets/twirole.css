@@ -4,11 +4,7 @@ input#handle {
 
 /* For the splash */
 div.jumbotron {
-    padding: 32px 32px;
-}
-
-img.logo {
-    height: 150px;
+    padding: 10px 10px;
 }
 
 /* Nav bar styles */
@@ -18,6 +14,22 @@ img.logo {
 
 .navbar-dark .navbar-nav a.nav-link.active {
     color: #ffffff;
+}
+
+.navbar-brand {height: 50px;}
+
+.navbar-brand img {
+  height: 60px;
+  float: left;
+  margin-left: 10px;
+  margin-top: -10px;
+}
+
+br {
+  content: "";
+  margin: 2em;
+  display: block;
+  font-size: 24%;
 }
 
 /* Spans for classifications */
@@ -35,6 +47,13 @@ span.brand {
 
 .error {
     color: red;
+}
+
+div.status {
+    position: absolute;
+    top: 0%;
+    right: 50%;
+    z-index: 1000;
 }
 
 /* Spinner (loading image) style */
@@ -61,7 +80,11 @@ span.brand {
 }
 
 img.profile-pic {
-    height: 55px;
+    height: 60px;
+}
+
+.w-75 {
+  margin: 0 auto;
 }
 
 div.card {
@@ -71,6 +94,32 @@ div.card {
     box-shadow: 0px 3px 3px 0px rgba(170,170,170,0.6);
 }
 
-div.card > div.card-body {
-    padding: 12px;
+div.card > div.card-body1 {
+    padding: 15px;
+}
+
+div.card > div.card-body1 > div.row {
+    margin-bottom: -8px;
+}
+
+div.card > div.card-body1 > div.row > div.col-4 {
+    margin-left: 10px;
+    margin-top: -5px;
+}
+
+div.card > div.card-body2 {
+    padding: 8px;
+    height: 55px;
+}
+
+div.card > div.card-body2 > div.row {
+    margin-bottom: -8px;
+}
+
+.alert {
+  margin-bottom: 1px;
+  height: 38px;
+  line-height:38px;
+  padding:0px 19px;
+  text-align: center;
 }

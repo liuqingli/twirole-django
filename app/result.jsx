@@ -21,48 +21,48 @@ class Result extends React.Component {
     }
 
     render() {
-        const profileImageUrl = `https://twitter.com/${this.props.data.username}/profile_image?size=original`
+        const profileImageUrl = `https://avatars.io/twitter/${this.props.data.username}`
 
         return (
             <div className="card">
                 <button className="remove-result" onClick={this.removeResult} title="Remove result">
                     <span className="fa fa-remove">&nbsp;</span>
                 </button>
-                <div className="card-body">
+                <div className="card-body1">
                     <div className="row">
-                        <div className="col-sm-2 align-self-center">
+                        <div className="col-lg-1 col-md-2 text-right">
                             <img className="profile-pic" src={profileImageUrl} />
                         </div>
-                        <div className="col-sm-4 align-self-center">
+                        <div className="col-lg-3 col-md-4 text-left">
                             <Classification data={this.props.data.hybrid} />
                             <h6>@{ this.props.data.username }</h6>
                         </div>
-                        <div className="col-sm-6 align-self-center">
-                            <Chart height={50} data={this.props.data.hybrid} />
+                        <div className="col-lg-4 col-md-4 text-center">
+                            <Chart height={40} width={250} data={this.props.data.hybrid} />
                         </div>
                     </div>
                 </div>
-                <div className="card-body bg-light">
+                <div className="card-body2 bg-light text-left">
                     <div className="row">
-                        <div className="col-sm-4">
-                            <b>Basic</b>
+                        <div className="col-4">
+                            <b>Basic Classifier</b>
                         </div>
-                        <div className="col-sm-4">
-                            <b>Advanced</b>
+                        <div className="col-4">
+                            <b>Advanced Classifier</b>
                         </div>
-                        <div className="col-sm-4">
-                            <b>Profile Picture</b>
+                        <div className="col-4">
+                            <b>Image Classifier</b>
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-sm-4">
-                            <Chart data={this.props.data.bf} />
+                        <div className="col-4">
+                            <Chart height={12} data={this.props.data.bf} />
                         </div>
-                        <div className="col-sm-4">
-                            <Chart data={this.props.data.af} />
+                        <div className="col-4">
+                            <Chart height={12} data={this.props.data.af} />
                         </div>
-                        <div className="col-sm-4">
-                            <Chart data={this.props.data.cnn} />
+                        <div className="col-4">
+                            <Chart height={12} data={this.props.data.cnn} />
                         </div>
                     </div>
                 </div>

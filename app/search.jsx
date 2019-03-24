@@ -10,11 +10,11 @@ function Search(props) {
     return (
         <div className="container">
             <div className="row">
-                <div className="col-lg-8 col-sm-8">
+                <div className="col-md-12 col-lg-12 align-self-center">
                     <SearchForm />
-                </div>
-                <div className="col-lg-4 col-sm-4">
-                    <Status />
+                    <div class="status">
+                        <Status />
+                    </div>
                 </div>
             </div>
         </div>

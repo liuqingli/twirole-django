@@ -18,7 +18,7 @@ class ResultList extends React.Component {
         }
 
         return (
-            <div className="container">
+            <div className="container" class="w-75">
                 { results.reverse() }
             </div>
         );

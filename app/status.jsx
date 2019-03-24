@@ -9,7 +9,7 @@ function Status(props) {
     if (props.loading)
         content = (<p><img className="spinner" src="/static/loading.gif" /></p>);
     else if (props.error)
-        content = (<p className="error">{ props.errorMessage }</p>);
+        content = (<p class="alert alert-danger" role="alert">{ props.errorMessage }</p>);
 
     return content;
 }
