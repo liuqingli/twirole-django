@@ -38,7 +38,7 @@ class Donut extends React.Component {
                 order: null
             },
             donut: {
-                width: 5,
+                width: 8,
                 label: {
                     show: false
                 }
