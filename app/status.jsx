@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 /* Functional component that manages the loading spinner and error message */
 function Status(props) {
     let content = (<p></p>);
-
+    
     if (props.loading)
         content = (<p><img className="spinner" src="/static/loading.gif" /></p>);
     else if (props.error)

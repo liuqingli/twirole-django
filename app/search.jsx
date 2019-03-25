@@ -12,9 +12,9 @@ function Search(props) {
             <div className="row">
                 <div className="col-md-12 col-lg-12 align-self-center">
                     <SearchForm />
-                    <div class="status">
-                        <Status />
-                    </div>
+                </div>
+                <div className="col-md-12 col-lg-12 align-self-center">
+                    <Status />
                 </div>
             </div>
         </div>

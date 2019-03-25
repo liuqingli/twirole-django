@@ -49,15 +49,12 @@ span.brand {
     color: red;
 }
 
-div.status {
+/* Spinner (loading image) style */
+.spinner {
     position: absolute;
     top: 0%;
     right: 50%;
     z-index: 1000;
-}
-
-/* Spinner (loading image) style */
-.spinner {
     height: 38px;
 }
 
@@ -85,6 +82,10 @@ img.profile-pic {
 
 .w-75 {
   margin: 0 auto;
+}
+
+div.container {
+  height: 110px;
 }
 
 div.card {
@@ -117,8 +118,11 @@ div.card > div.card-body2 > div.row {
 }
 
 .alert {
+  position: absolute;
+  left: 25%;
   margin-bottom: 1px;
   height: 38px;
+  width: 50%;
   line-height:38px;
   padding:0px 19px;
   text-align: center;
