@@ -25,7 +25,7 @@ function Classification(props) {
         classif = (<span className="brand">Brand</span>);
     }
 
-    return <h4>{ classif }</h4>;
+    return <h3>{ classif }</h3>;
 }
 
 

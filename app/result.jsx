@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import Chart from './chart.jsx';
+import Donut from './donut.jsx';
 import Classification from './classification.jsx';
 import Actions from './actions.js';
 
@@ -29,16 +30,16 @@ class Result extends React.Component {
                     <span className="fa fa-remove">&nbsp;</span>
                 </button>
                 <div className="card-body1">
-                    <div className="row">
-                        <div className="col-lg-1 col-md-2 text-right">
+                    <div class="card-row">
+                        <div class="card-img">
                             <img className="profile-pic" src={profileImageUrl} />
                         </div>
-                        <div className="col-lg-3 col-md-4 text-left">
+                        <div class="card-donut">
+                            <Donut height={80} width={80} data={this.props.data.hybrid} />
+                        </div>
+                        <div class="card-label">
                             <Classification data={this.props.data.hybrid} />
                             <h6>@{ this.props.data.username }</h6>
-                        </div>
-                        <div className="col-lg-4 col-md-4 text-center">
-                            <Chart height={40} width={250} data={this.props.data.hybrid} />
                         </div>
                     </div>
                 </div>

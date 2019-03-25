@@ -76,8 +76,25 @@ span.brand {
     color: #ff0000;
 }
 
+.card-row {
+    display: flex;
+}
+
+.card-img {
+    flex: 0;
+}
+
+.card-label {
+    margin-left: 30px;
+    padding-top: 6px;
+}
+
+.card-donut {
+    margin-left: 30px;
+}
+
 img.profile-pic {
-    height: 60px;
+    height: 80px;
 }
 
 .w-75 {
@@ -96,16 +113,10 @@ div.card {
 }
 
 div.card > div.card-body1 {
-    padding: 15px;
-}
-
-div.card > div.card-body1 > div.row {
-    margin-bottom: -8px;
-}
-
-div.card > div.card-body1 > div.row > div.col-4 {
-    margin-left: 10px;
-    margin-top: -5px;
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 div.card > div.card-body2 {
