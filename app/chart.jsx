@@ -22,20 +22,22 @@ class Chart extends React.Component {
             bindto: `#${this.id}`,
             data: {
                 columns: [
+                    ['Null', 100],
                     ['Male', 0],
                     ['Female', 0],
                     ['Brand', 0]
                 ],
                 type: 'bar',
                 colors: {
+                    Null: '#f9f9f9',
                     Male: '#0066CC',
                     Female: '#FF6666',
                     Brand: '#808080'
                 },
                 groups: [
-                    ['Male', 'Female', 'Brand']
+                    ['Null', 'Male', 'Female', 'Brand']
                 ],
-                order: null
+                order: 'desc'
             },
             bar: {
                 width: {
@@ -65,6 +67,7 @@ class Chart extends React.Component {
         setTimeout(() => {
             this.chart.load({
                 columns: [
+                    ['Null', 0],
                     ['Male', data.male],
                     ['Female', data.female],
                     ['Brand', data.brand]
